@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TenantDemo</display-name>
+  <welcome-file-list>
+    
+    <welcome-file>TenantLogin.jsp</welcome-file>
+    
+  </welcome-file-list>
+  
+  
+  <servlet>
+  <servlet-name>TenantLogin</servlet-name>
+  <servlet-class>com.tenant.LoginServlet</servlet-class>
+  
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>TenantLogin</servlet-name>
+  <url-pattern>/login</url-pattern>
+  
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>TenantRegister</servlet-name>
+  <servlet-class>com.tenant.TenantInsert</servlet-class>
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>TenantRegister</servlet-name>
+  <url-pattern>/insert</url-pattern>
+  
+  </servlet-mapping>
+  
+  
+  <servlet>
+  <servlet-name>updateTenant</servlet-name>
+  <servlet-class>com.tenant.updateTenantServlet</servlet-class>
+  
+  
+  </servlet>
+  
+  <servlet-mapping>
+  <servlet-name>updateTenant</servlet-name>
+  <url-pattern>/update</url-pattern>
+  
+  
+  </servlet-mapping>
+  
+  <servlet>
+  
+  <servlet-name>deleteTenant</servlet-name>
+  <servlet-class>com.tenant.DeleteTenantServlet</servlet-class>
+  
+  </servlet>
+  
+  
+  
+   <servlet-mapping>
+  <servlet-name>deleteTenant</servlet-name>
+  <url-pattern>/delete</url-pattern>
+  
+  
+  </servlet-mapping>
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
+</web-app>
